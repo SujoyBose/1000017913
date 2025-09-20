@@ -1,5 +1,5 @@
 import express from 'express';
-import loggingMiddleware from './loggingMiddleware.js';
+import loggingMiddleware from '../LoggerMiddleware/loggingMiddleware.js';
 import shortUrlRouter from './shortUrlRouter.js';
 
 const app = express();
