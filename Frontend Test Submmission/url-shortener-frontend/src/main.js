@@ -1,4 +1,3 @@
-
 import './index.css';
 
 const app = document.getElementById('app');
@@ -67,7 +66,7 @@ form.addEventListener('submit', async (e) => {
   // Send requests concurrently
   try {
     const responses = await Promise.all(requests.map(async (req) => {
-      const res = await fetch('/api/shorten', {
+      const res = await fetch('/shorturls', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url: req.url, validity: req.validity, shortcode: req.shortcode })
